@@ -1,0 +1,102 @@
+/* Set the font for the entire page */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the body */
+body {
+    background-color: #f1f1f1;
+    align-items: center;
+}
+
+/* Style the div that contains the form */
+body > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the div that contains the form */
+body > h1 {
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the form */
+form {
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+}
+
+/* Style the spans that hols the form fields */
+.form_field {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 10px;
+}
+
+/* Style the Label and the Input tags */
+.form_field > label, .form_field > input {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* Style the error p tags */
+.form_field > p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the input tags */
+.form_field input {
+    border: 2px solid rgb(189, 189, 189);
+    /* outline: 0; */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightpink;
+}
+
+/* Style the div containing the buttons */
+form > div {
+    /* margin-top: 10px;    */
+    display: flex;
+    justify-content: space-between;
+}   
+
+form > div > input {
+    margin: 10px;   
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Style the button */
+form > div > input[type="submit"] {
+    background-color: #4CAF50;
+}
+/* Style the button */
+form > div > input[type="reset"] {
+    background-color: #923c3c;
+}
+
+/* Style the buttons on hover */
+form > div > input[type="submit"]:hover, form > div > input[type="reset"]:hover {
+    border-radius: 120px;
+    box-shadow: 0 0 10px 1px rgba(65, 128, 149, 0.5);
+}
+
+#name_error, #email_error, #phone_error, #location_error,
+#profession_error, #password_error, #confirm-password_error {
+    visibility: none;
+}
